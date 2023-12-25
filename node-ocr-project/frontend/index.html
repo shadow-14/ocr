@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OCR App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    #ocr-form {
+      text-align: center;
+    }
+    #ocr-result {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div id="ocr-form">
+    <h1>OCR App</h1>
+    <form id="upload-form">
+      <input type="file" accept="image/*" id="image-input" required>
+      <!-- Change the button type to 'submit' -->
+      <button type="submit">Upload and OCR</button>
+    </form>
+    <div id="ocr-result"></div>
+  </div>
+<script src="front.js"></script>
+ 
+</body>
+</html>
